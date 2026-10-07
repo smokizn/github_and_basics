@@ -1,0 +1,189 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #10131a;
+    color: white;
+}
+
+header {
+    background: #1b2030;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #7dd3fc;
+}
+
+nav a {
+    color: #ddd;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: #7dd3fc;
+}
+
+section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 70px 8%;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero div {
+    flex: 1;
+}
+
+.hero img {
+    width: 45%;
+    border-radius: 12px;
+}
+
+.hero span {
+    color: #f472b6;
+    font-size: 13px;
+}
+
+h2 {
+    font-size: 35px;
+    margin: 10px 0 15px;
+}
+
+p {
+    color: #aeb4c0;
+    line-height: 1.6;
+}
+
+button {
+    border: none;
+    background: #7dd3fc;
+    padding: 11px 20px;
+    margin-top: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #38bdf8;
+}
+
+.second {
+    background: #f472b6;
+    color: white;
+    margin-left: 5px;
+}
+
+.cards {
+    display: flex;
+    gap: 15px;
+}
+
+article {
+    flex: 1;
+    background: #1b2030;
+    padding: 22px;
+    border-radius: 10px;
+    border: 1px solid #292f40;
+}
+
+article h3 {
+    color: #7dd3fc;
+}
+
+article a {
+    color: #f472b6;
+    text-decoration: none;
+}
+
+.about {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.about div {
+    flex: 1;
+}
+
+.about img {
+    width: 40%;
+    border-radius: 10px;
+}
+
+li {
+    margin: 10px 0;
+    color: #bbb;
+}
+
+.contact {
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 25px auto;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin: 12px 0 5px;
+}
+
+input {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #343a4d;
+    border-radius: 5px;
+    background: #1b2030;
+    color: white;
+}
+
+footer {
+    background: #1b2030;
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    color: #888;
+}
+
+@media (max-width: 700px) {
+    header,
+    .hero,
+    .about,
+    footer {
+        flex-direction: column;
+    }
+
+    .hero img,
+    .about img {
+        width: 100%;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    nav {
+        margin-top: 12px;
+    }
+}
